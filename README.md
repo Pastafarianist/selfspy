@@ -21,6 +21,13 @@ pyWin32: http://sourceforge.net/projects/pywin32/files/pywin32/
 If you run ArchLinux, here is an AUR package which may be up-to-date:
 https://aur.archlinux.org/packages/selfspy-git/
 
+If you are on Gentoo, make sure that you have `layman` installed, and then run:
+
+```
+sudo layman -a maksbotan
+sudo emerge -av selfspy
+```
+
 To install manually, either clone the repository from Github (git clone git://github.com/gurgeh/selfspy), or click on the Download link on http://github.com/gurgeh/selfspy/ to get the latest Python source.
 
 Selfspy is only tested with Python 2.7 and has a few dependencies on other Python libraries that need to be satisfied. These are documented in the requirements.txt file. If you are on Linux, you will need subversion installed for pip to install python-xlib. If you are on Mac, you will not need to install python-xlib at all. Python-xlib is currently a tricky package to include in the requirements since it is not on PyPi.
